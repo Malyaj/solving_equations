@@ -22,6 +22,7 @@ def augmented_matrix(A, b):
     return aug
 
 
+# example data, will add input functionality later
 r1 = [5, -4, 2]
 r2 = [2, 3, -1]
 r3 = [1, 1, 1]
@@ -36,6 +37,7 @@ A_b = augmented_matrix(A, b)
 n = len(A)
 
 
+# traversing column-wise , collecting factors to make the lower-triangular elements zero
 for c_iter in range(n):
     m = []
     for row in range(n):
